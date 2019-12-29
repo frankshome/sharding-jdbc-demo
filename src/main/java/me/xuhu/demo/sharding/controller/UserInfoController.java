@@ -19,9 +19,10 @@ public class UserInfoController {
         return userInfoMapper.selectById(id);
     }
 
-    @GetMapping("add/{name}/{age}")
-    public Long addUser(@PathVariable("name") String name, @PathVariable("age") Integer age) {
+    @GetMapping("add/{id}/{name}/{age}")
+    public Long addUser(@PathVariable("id") Long id, @PathVariable("name") String name, @PathVariable("age") Integer age) {
         UserInfo userInfo = new UserInfo();
+        userInfo.setId(id);
         userInfo.setUserName(name);
         userInfo.setAge(age);
 
