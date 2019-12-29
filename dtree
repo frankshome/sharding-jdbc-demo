@@ -1,0 +1,1574 @@
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+bootArchives - Configuration for Spring Boot archive artifacts.
+No dependencies
+
+compile - Dependencies for source set 'main' (deprecated, use 'implementation' instead).
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
+\--- org.projectlombok:lombok:1.18.10
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
++--- org.projectlombok:lombok:1.18.10
++--- org.springframework.boot:spring-boot-starter -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot:2.2.2.RELEASE
+|    |    +--- org.springframework:spring-core:5.2.2.RELEASE
+|    |    |    \--- org.springframework:spring-jcl:5.2.2.RELEASE
+|    |    \--- org.springframework:spring-context:5.2.2.RELEASE
+|    |         +--- org.springframework:spring-aop:5.2.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:5.2.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:5.2.2.RELEASE
+|    |              \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:2.2.2.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    \--- org.slf4j:jul-to-slf4j:1.7.29
+|    |         \--- org.slf4j:slf4j-api:1.7.29
+|    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+\--- org.springframework.boot:spring-boot-starter-web -> 2.2.2.RELEASE
+     +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- org.springframework:spring-web:5.2.2.RELEASE
+     |    |    +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+     |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1
+     |         +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     +--- org.springframework.boot:spring-boot-starter-tomcat:2.2.2.RELEASE
+     |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.29
+     |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.29
+     |         \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     +--- org.springframework.boot:spring-boot-starter-validation:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- jakarta.validation:jakarta.validation-api:2.0.1
+     |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+     |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+     |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+     +--- org.springframework:spring-web:5.2.2.RELEASE (*)
+     \--- org.springframework:spring-webmvc:5.2.2.RELEASE
+          +--- org.springframework:spring-aop:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-context:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-expression:5.2.2.RELEASE (*)
+          \--- org.springframework:spring-web:5.2.2.RELEASE (*)
+
+compileOnly - Compile only dependencies for source set 'main'.
+No dependencies
+
+default - Configuration for default artifacts.
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
++--- org.projectlombok:lombok:1.18.10
++--- org.springframework.boot:spring-boot-starter -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot:2.2.2.RELEASE
+|    |    +--- org.springframework:spring-core:5.2.2.RELEASE
+|    |    |    \--- org.springframework:spring-jcl:5.2.2.RELEASE
+|    |    \--- org.springframework:spring-context:5.2.2.RELEASE
+|    |         +--- org.springframework:spring-aop:5.2.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:5.2.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:5.2.2.RELEASE
+|    |              \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:2.2.2.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    \--- org.slf4j:jul-to-slf4j:1.7.29
+|    |         \--- org.slf4j:slf4j-api:1.7.29
+|    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.25
+\--- org.springframework.boot:spring-boot-starter-web -> 2.2.2.RELEASE
+     +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- org.springframework:spring-web:5.2.2.RELEASE
+     |    |    +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+     |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1
+     |         +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     +--- org.springframework.boot:spring-boot-starter-tomcat:2.2.2.RELEASE
+     |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.29
+     |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.29
+     |         \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     +--- org.springframework.boot:spring-boot-starter-validation:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- jakarta.validation:jakarta.validation-api:2.0.1
+     |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+     |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+     |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+     +--- org.springframework:spring-web:5.2.2.RELEASE (*)
+     \--- org.springframework:spring-webmvc:5.2.2.RELEASE
+          +--- org.springframework:spring-aop:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-context:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-expression:5.2.2.RELEASE (*)
+          \--- org.springframework:spring-web:5.2.2.RELEASE (*)
+
+implementation - Implementation only dependencies for source set 'main'. (n)
++--- org.springframework.boot:spring-boot-starter (n)
+\--- org.springframework.boot:spring-boot-starter-web (n)
+
+runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOnly' instead).
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
+\--- org.projectlombok:lombok:1.18.10
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
++--- org.projectlombok:lombok:1.18.10
++--- org.springframework.boot:spring-boot-starter -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot:2.2.2.RELEASE
+|    |    +--- org.springframework:spring-core:5.2.2.RELEASE
+|    |    |    \--- org.springframework:spring-jcl:5.2.2.RELEASE
+|    |    \--- org.springframework:spring-context:5.2.2.RELEASE
+|    |         +--- org.springframework:spring-aop:5.2.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:5.2.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:5.2.2.RELEASE
+|    |              \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:2.2.2.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    \--- org.slf4j:jul-to-slf4j:1.7.29
+|    |         \--- org.slf4j:slf4j-api:1.7.29
+|    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.25
+\--- org.springframework.boot:spring-boot-starter-web -> 2.2.2.RELEASE
+     +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- org.springframework:spring-web:5.2.2.RELEASE
+     |    |    +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+     |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1
+     |         +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+     |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+     +--- org.springframework.boot:spring-boot-starter-tomcat:2.2.2.RELEASE
+     |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.29
+     |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.29
+     |         \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+     +--- org.springframework.boot:spring-boot-starter-validation:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     |    +--- jakarta.validation:jakarta.validation-api:2.0.1
+     |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+     |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+     |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+     +--- org.springframework:spring-web:5.2.2.RELEASE (*)
+     \--- org.springframework:spring-webmvc:5.2.2.RELEASE
+          +--- org.springframework:spring-aop:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-context:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+          +--- org.springframework:spring-expression:5.2.2.RELEASE (*)
+          \--- org.springframework:spring-web:5.2.2.RELEASE (*)
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompile - Dependencies for source set 'test' (deprecated, use 'testImplementation' instead).
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
+\--- org.projectlombok:lombok:1.18.10
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
++--- org.projectlombok:lombok:1.18.10
++--- org.springframework.boot:spring-boot-starter -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot:2.2.2.RELEASE
+|    |    +--- org.springframework:spring-core:5.2.2.RELEASE
+|    |    |    \--- org.springframework:spring-jcl:5.2.2.RELEASE
+|    |    \--- org.springframework:spring-context:5.2.2.RELEASE
+|    |         +--- org.springframework:spring-aop:5.2.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:5.2.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:5.2.2.RELEASE
+|    |              \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:2.2.2.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    \--- org.slf4j:jul-to-slf4j:1.7.29
+|    |         \--- org.slf4j:slf4j-api:1.7.29
+|    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter-web -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.2.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:2.2.2.RELEASE
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.29
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.29
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.2.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.2.RELEASE (*)
+|    \--- org.springframework:spring-webmvc:5.2.2.RELEASE
+|         +--- org.springframework:spring-aop:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-context:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-expression:5.2.2.RELEASE (*)
+|         \--- org.springframework:spring-web:5.2.2.RELEASE (*)
+\--- org.springframework.boot:spring-boot-starter-test -> 2.2.2.RELEASE
+     +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-test:2.2.2.RELEASE
+     |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-test:2.2.2.RELEASE (*)
+     |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE (*)
+     +--- com.jayway.jsonpath:json-path:2.4.0
+     |    +--- net.minidev:json-smart:2.3
+     |    |    \--- net.minidev:accessors-smart:1.2
+     |    |         \--- org.ow2.asm:asm:5.0.4
+     |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+     +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+     |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+     +--- org.junit.jupiter:junit-jupiter:5.5.2
+     |    +--- org.junit.jupiter:junit-jupiter-api:5.5.2
+     |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    |    +--- org.opentest4j:opentest4j:1.2.0
+     |    |    \--- org.junit.platform:junit-platform-commons:1.5.2
+     |    |         \--- org.apiguardian:apiguardian-api:1.1.0
+     |    \--- org.junit.jupiter:junit-jupiter-params:5.5.2
+     |         +--- org.apiguardian:apiguardian-api:1.1.0
+     |         \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+     +--- org.mockito:mockito-junit-jupiter:3.1.0
+     |    \--- org.mockito:mockito-core:3.1.0
+     |         +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.10.4
+     |         +--- net.bytebuddy:byte-buddy-agent:1.9.10 -> 1.10.4
+     |         \--- org.objenesis:objenesis:2.6
+     +--- org.assertj:assertj-core:3.13.2
+     +--- org.hamcrest:hamcrest:2.1
+     +--- org.mockito:mockito-core:3.1.0 (*)
+     +--- org.skyscreamer:jsonassert:1.5.0
+     |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+     +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     +--- org.springframework:spring-test:5.2.2.RELEASE
+     |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     \--- org.xmlunit:xmlunit-core:2.6.3
+
+testCompileOnly - Compile only dependencies for source set 'test'.
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+\--- org.springframework.boot:spring-boot-starter-test (n)
+
+testRuntime - Runtime dependencies for source set 'test' (deprecated, use 'testRuntimeOnly' instead).
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
+\--- org.projectlombok:lombok:1.18.10
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- org.apache.shardingsphere:sharding-jdbc-spring-boot-starter:4.0.0-RC3
+|    +--- org.apache.shardingsphere:sharding-spring-boot-util:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29
+|    |    |    |         \--- org.slf4j:slf4j-api:1.7.29
+|    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    +--- commons-codec:commons-codec:1.10 -> 1.13
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- org.apache.shardingsphere:sharding-jdbc-core:4.0.0-RC3
+|    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3
+|    |    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    |    +--- org.apache.commons:commons-collections4:4.2
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sql92:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-mysql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-postgresql:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-oracle:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-parse-sqlserver:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-spi:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.antlr:antlr4-runtime:4.7.1
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-api:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-parse-common:4.0.0-RC3 (*)
+|    |    |    |    +--- org.codehaus.groovy:groovy:2.4.5 -> 2.5.8
+|    |    |    |    +--- org.yaml:snakeyaml:1.16 -> 1.25
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-preprocessor:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-rewrite:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-route:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- org.apache.shardingsphere:sharding-core-merge:4.0.0-RC3
+|    |    |    |    +--- org.apache.shardingsphere:sharding-core-execute:4.0.0-RC3 (*)
+|    |    |    |    +--- com.google.guava:guava:18.0
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- org.apache.shardingsphere:sharding-transaction-core:4.0.0-RC3
+|    |    |    +--- org.apache.shardingsphere:sharding-core-entry:4.0.0-RC3 (*)
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
+|    +--- com.google.guava:guava:18.0
+|    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.29
+|    \--- org.slf4j:jcl-over-slf4j:1.7.7 -> 1.7.29 (*)
++--- com.baomidou:mybatis-plus:3.3.0
+|    \--- com.baomidou:mybatis-plus-extension:3.3.0
+|         +--- com.baomidou:mybatis-plus-core:3.3.0
+|         |    +--- com.baomidou:mybatis-plus-annotation:3.3.0
+|         |    |    \--- org.mybatis:mybatis:3.5.3
+|         |    +--- com.github.jsqlparser:jsqlparser:3.1
+|         |    \--- org.mybatis:mybatis:3.5.3
+|         \--- org.mybatis:mybatis-spring:2.0.3
++--- org.projectlombok:lombok:1.18.10
++--- org.springframework.boot:spring-boot-starter -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot:2.2.2.RELEASE
+|    |    +--- org.springframework:spring-core:5.2.2.RELEASE
+|    |    |    \--- org.springframework:spring-jcl:5.2.2.RELEASE
+|    |    \--- org.springframework:spring-context:5.2.2.RELEASE
+|    |         +--- org.springframework:spring-aop:5.2.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:5.2.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:5.2.2.RELEASE
+|    |              \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:2.2.2.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.2.3
+|    |    |    +--- ch.qos.logback:logback-core:1.2.3
+|    |    |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.12.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+|    |    |    \--- org.apache.logging.log4j:log4j-api:2.12.1
+|    |    \--- org.slf4j:jul-to-slf4j:1.7.29
+|    |         \--- org.slf4j:slf4j-api:1.7.29
+|    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.25
++--- org.springframework.boot:spring-boot-starter-web -> 2.2.2.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-json:2.2.2.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    |    +--- org.springframework:spring-web:5.2.2.RELEASE
+|    |    |    +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|    |    |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.1
+|    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.1
+|    |         +--- com.fasterxml.jackson.core:jackson-core:2.10.1
+|    |         \--- com.fasterxml.jackson.core:jackson-databind:2.10.1 (*)
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:2.2.2.RELEASE
+|    |    +--- jakarta.annotation:jakarta.annotation-api:1.3.5
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:9.0.29
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:9.0.29
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:9.0.29
+|    +--- org.springframework.boot:spring-boot-starter-validation:2.2.2.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+|    |    +--- jakarta.validation:jakarta.validation-api:2.0.1
+|    |    \--- org.hibernate.validator:hibernate-validator:6.0.18.Final
+|    |         +--- org.jboss.logging:jboss-logging:3.3.2.Final -> 3.4.1.Final
+|    |         \--- com.fasterxml:classmate:1.3.4 -> 1.5.1
+|    +--- org.springframework:spring-web:5.2.2.RELEASE (*)
+|    \--- org.springframework:spring-webmvc:5.2.2.RELEASE
+|         +--- org.springframework:spring-aop:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-beans:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-context:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+|         +--- org.springframework:spring-expression:5.2.2.RELEASE (*)
+|         \--- org.springframework:spring-web:5.2.2.RELEASE (*)
+\--- org.springframework.boot:spring-boot-starter-test -> 2.2.2.RELEASE
+     +--- org.springframework.boot:spring-boot-starter:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-test:2.2.2.RELEASE
+     |    \--- org.springframework.boot:spring-boot:2.2.2.RELEASE (*)
+     +--- org.springframework.boot:spring-boot-test-autoconfigure:2.2.2.RELEASE
+     |    +--- org.springframework.boot:spring-boot-test:2.2.2.RELEASE (*)
+     |    \--- org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE (*)
+     +--- com.jayway.jsonpath:json-path:2.4.0
+     |    +--- net.minidev:json-smart:2.3
+     |    |    \--- net.minidev:accessors-smart:1.2
+     |    |         \--- org.ow2.asm:asm:5.0.4
+     |    \--- org.slf4j:slf4j-api:1.7.25 -> 1.7.29
+     +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+     |    \--- jakarta.activation:jakarta.activation-api:1.2.1
+     +--- org.junit.jupiter:junit-jupiter:5.5.2
+     |    +--- org.junit.jupiter:junit-jupiter-api:5.5.2
+     |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    |    +--- org.opentest4j:opentest4j:1.2.0
+     |    |    \--- org.junit.platform:junit-platform-commons:1.5.2
+     |    |         \--- org.apiguardian:apiguardian-api:1.1.0
+     |    +--- org.junit.jupiter:junit-jupiter-params:5.5.2
+     |    |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |    |    \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+     |    \--- org.junit.jupiter:junit-jupiter-engine:5.5.2
+     |         +--- org.apiguardian:apiguardian-api:1.1.0
+     |         +--- org.junit.platform:junit-platform-engine:1.5.2
+     |         |    +--- org.apiguardian:apiguardian-api:1.1.0
+     |         |    +--- org.opentest4j:opentest4j:1.2.0
+     |         |    \--- org.junit.platform:junit-platform-commons:1.5.2 (*)
+     |         \--- org.junit.jupiter:junit-jupiter-api:5.5.2 (*)
+     +--- org.mockito:mockito-junit-jupiter:3.1.0
+     |    +--- org.mockito:mockito-core:3.1.0
+     |    |    +--- net.bytebuddy:byte-buddy:1.9.10 -> 1.10.4
+     |    |    +--- net.bytebuddy:byte-buddy-agent:1.9.10 -> 1.10.4
+     |    |    \--- org.objenesis:objenesis:2.6
+     |    \--- org.junit.jupiter:junit-jupiter-api:5.4.2 -> 5.5.2 (*)
+     +--- org.assertj:assertj-core:3.13.2
+     +--- org.hamcrest:hamcrest:2.1
+     +--- org.mockito:mockito-core:3.1.0 (*)
+     +--- org.skyscreamer:jsonassert:1.5.0
+     |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+     +--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     +--- org.springframework:spring-test:5.2.2.RELEASE
+     |    \--- org.springframework:spring-core:5.2.2.RELEASE (*)
+     \--- org.xmlunit:xmlunit-core:2.6.3
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
